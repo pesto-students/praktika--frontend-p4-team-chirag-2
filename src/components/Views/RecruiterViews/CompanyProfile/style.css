@@ -1,0 +1,39 @@
+#comapny-prof-form-div {
+	padding: '1em';
+	background-color: 'white';
+}
+
+.ant-input,
+.ant-input-affix-wrapper {
+	max-width: 30em;
+	margin-right: 0.5em;
+}
+
+.comapny-prof-form-div input {
+	max-width: 30em;
+}
+
+.button-actions-div {
+	position: relative;
+}
+
+.button-actions-div button {
+	margin: 2em;
+}
+
+.profileLabel {
+	font-weight: 500;
+	margin-top: 1em;
+}
+
+.profileValue {
+	margin-top: 1em;
+}
+
+.contentBox {
+	background-color: white;
+	padding: 1em;
+	margin-top: 1em;
+	width: 90%;
+	margin-bottom: 2em;
+}
