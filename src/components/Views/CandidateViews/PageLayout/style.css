@@ -1,0 +1,57 @@
+#praktika-logo {
+	width: 15em;
+	padding: 2em;
+}
+
+.ant-layout-sider-children {
+	background-color: white;
+	border-right: 1px solid lightgray;
+	height: 500px;
+	min-height: 100vh;
+}
+
+.ant-layout-header {
+	background-color: white;
+}
+
+.ant-layout-content {
+	padding-left: 2em;
+	padding-top: 0.2em;
+}
+
+.button-actions-col {
+	text-align: right !important;
+	margin-bottom: 20px;
+}
+
+.ant-btn-primary {
+	width: 200px;
+}
+
+.ant-input-affix-wrapper {
+	max-width: 100%;
+}
+
+.ant-input {
+	max-width: 100%;
+}
+
+.ant-input-number-group-wrapper {
+	max-width: 100%;
+}
+
+.ant-col-24 {
+	flex: 0 0 99%;
+}
+
+.candidate-form {
+	margin-right: 10%;
+}
+
+.ant-menu-sub {
+	width: 200px;
+}
+
+.header-icon {
+	margin-right: 1em;
+}

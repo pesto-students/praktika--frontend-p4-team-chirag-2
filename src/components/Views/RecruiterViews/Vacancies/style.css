@@ -1,0 +1,21 @@
+#vacancy-form-div {
+	padding: '1em';
+	background-color: 'white';
+}
+
+.ant-input,
+.ant-input-affix-wrapper {
+	max-width: 30em;
+}
+
+.vacancy-form-div input {
+	max-width: 30em;
+}
+
+.button-actions-div {
+	position: relative;
+}
+
+.button-actions-div button {
+	margin: 2em;
+}
