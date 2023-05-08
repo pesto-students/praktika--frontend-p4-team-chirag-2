@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Col, Form, Input, Button, Radio, Spin } from 'antd';
+import { Col, Form, Input, Button, Radio, Spin, notification } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
 import API from '../../../utils/API/api';
+import PraktikaLogo from '../../Logo';
 
 function RightContent({ setToken }) {
 	const navigate = useNavigate();
@@ -30,16 +31,27 @@ function RightContent({ setToken }) {
 					if (status === 200 && data.status === 1) {
 						if (data.data.role_id && data.data.role_id === 2) {
 							setToken(data.data.token);
-							navigate('/dashboard');
+							notification.success({
+								message: 'Registration Successful!',
+								description: 'Registration Successful!'
+							});
+							setTimeout(() => navigate('/dashboard'), 1000);
 						} else if (data.data.role_id && data.data.role_id === 1) {
 							setToken(data.data.token);
-							navigate('/candidate');
+							notification.success({
+								message: 'Registration Successful!',
+								description: 'Registration Successful!'
+							});
+							setTimeout(() => navigate('/candidate'), 1000);
 						}
 					} else navigate('/');
 				})
 				.catch((err) => {
+					console.error('e', err);
 					setLoading(false);
-					alert(err);
+					notification.error({
+						message: err
+					});
 					navigate('/');
 				});
 		}
@@ -59,6 +71,9 @@ function RightContent({ setToken }) {
 	}
 	return (
 		<Col className='right-content-block'>
+			<span className='mini-logo-item'>
+				<PraktikaLogo />
+			</span>
 			<div style={{ textAlign: 'justify' }}>
 				<h1>Create an account</h1>
 				<p>Create your account to start using Praktika.</p>

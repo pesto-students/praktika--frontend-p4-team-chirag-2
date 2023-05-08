@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Form, Input, SubmitButton, ResetButton, Select } from 'formik-antd';
 import { Formik } from 'formik';
-import { Divider, Row, Col } from 'antd';
+import { Divider, Row, Col, notification } from 'antd';
 import './style.css';
 import API from '../../../../utils/API/api';
 const { TextArea } = Input;
@@ -15,7 +15,11 @@ function Vacancies({ updateRender, token }) {
 	function createVacancy(values, token) {
 		API.createVacancy(values, token)
 			.then((res) => {
-				console.log('create vacancy API res: ', res);
+				notification.success({
+					message: 'Vacancy Creation Successful!',
+					description: 'Vacancy Creation Successful!'
+				});
+				setTimeout(() => updateRender('6'), 2000);
 				return;
 			})
 			.catch((err) => {
@@ -128,7 +132,6 @@ function Vacancies({ updateRender, token }) {
 					}}
 					onSubmit={(values) => {
 						createVacancy(values, token);
-						updateRender('6');
 					}}
 				>
 					<Form layout='vertical' className='vacancy-form'>

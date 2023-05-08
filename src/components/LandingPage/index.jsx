@@ -5,11 +5,11 @@ import RightContent from './RightContent';
 
 function LandingPage({ setToken }) {
 	return (
-		<Row>
-			<Col span={12}>
+		<Row className='content-row'>
+			<Col span={12} className='left-content-col'>
 				<LeftContent />
 			</Col>
-			<Col span={12}>
+			<Col span={12} className='right-content-col'>
 				<RightContent setToken={setToken} />
 			</Col>
 		</Row>

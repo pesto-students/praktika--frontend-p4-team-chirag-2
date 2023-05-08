@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Col, Form, Input, Button, Spin } from 'antd';
+import { Col, Form, Input, Button, Spin, notification } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
 import API from '../../../utils/API/api';
+import PraktikaLogo from '../../Logo';
 
 function RightContent({ setToken }) {
 	const navigate = useNavigate();
@@ -26,16 +27,27 @@ function RightContent({ setToken }) {
 					if (status === 200 && data.status === 1) {
 						if (data.data.role_id && data.data.role_id === 2) {
 							setToken(data.data.token);
-							navigate('/dashboard');
+							notification.success({
+								message: 'Login Successful!',
+								description: 'Login Successful!'
+							});
+							setTimeout(() => navigate('/dashboard'), 1000);
 						} else if (data.data.role_id && data.data.role_id === 1) {
 							setToken(data.data.token);
-							navigate('/candidate');
+							notification.success({
+								message: 'Login Successful!',
+								description: 'Login Successful!'
+							});
+							setTimeout(() => navigate('/candidate'), 1000);
 						}
 					} else navigate('/login');
 				})
 				.catch((err) => {
+					console.error('e', err);
 					setLoading(false);
-					alert(err);
+					notification.error({
+						message: err
+					});
 					navigate('/login');
 				});
 		}
@@ -49,6 +61,9 @@ function RightContent({ setToken }) {
 	}
 	return (
 		<Col className='right-content-block'>
+			<span className='mini-logo-item'>
+				<PraktikaLogo />
+			</span>
 			<div style={{ textAlign: 'justify' }}>
 				<h1>Welcome back!</h1>
 				<p>Please enter your login details.</p>
@@ -58,7 +73,7 @@ function RightContent({ setToken }) {
 					initialValues={{ remember: true }}
 				>
 					<Form.Item label='Email address :' className='hp-mb-16'>
-						<Input name='email' id='email' defaultValue={'project@pesto.com'} />
+						<Input name='email' defaultValue={'project@pesto.com'} />
 					</Form.Item>
 
 					<Form.Item label='Password :' className='hp-mb-8'>

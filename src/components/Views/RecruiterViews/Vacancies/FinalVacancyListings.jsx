@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Row, Col, Divider, Button } from 'antd';
+import { Row, Col, Divider, Button, notification } from 'antd';
 import API from '../../../../utils/API/api';
 
 function FinalVacancyListings({ token, updateRender }) {
@@ -20,7 +20,10 @@ function FinalVacancyListings({ token, updateRender }) {
 	function deleteVacancy(id, token) {
 		API.deleteVacancy(id, token)
 			.then((res) => {
-				console.log('deleted!', res);
+				notification.warning({
+					message: 'Delete Successful!',
+					description: 'Delete Successful!'
+				});
 				updateRender(1);
 			})
 			.catch((err) => {

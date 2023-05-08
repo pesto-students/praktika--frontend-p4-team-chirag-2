@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Form, Input, ResetButton } from 'formik-antd';
 import { Formik } from 'formik';
-import { Row, Col, Divider, Button } from 'antd';
+import { Row, Col, Divider, Button, notification } from 'antd';
 import { LinkedinOutlined, FacebookOutlined } from '@ant-design/icons';
 import './style.css';
 import API from '../../../../utils/API/api';
@@ -27,7 +27,10 @@ export default function FinalCompanyPage({ updateRender, token }) {
 		API.updateCompany(values, token)
 			.then(({ status }) => {
 				if (status === 200) {
-					console.log('Profile updated!');
+					notification.success({
+						message: 'Update Successful!',
+						description: 'Update Successful!'
+					});
 					setEditFlag(false);
 					return;
 				}

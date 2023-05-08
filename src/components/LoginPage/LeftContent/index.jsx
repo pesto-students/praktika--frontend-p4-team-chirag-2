@@ -13,17 +13,7 @@ function LeftContent() {
 				<PraktikaLogo />
 			</Col>
 
-			<img
-				src={backgtoundImage}
-				alt='Background'
-				className='hp-w-100'
-				style={{
-					height: '300px',
-					marginTop: '8em',
-					position: 'relative',
-					right: '108px'
-				}}
-			/>
+			<img src={backgtoundImage} alt='Background' className='background-img' />
 		</Row>
 	);
 }
