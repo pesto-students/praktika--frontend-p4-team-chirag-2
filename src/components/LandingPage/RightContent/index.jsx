@@ -38,7 +38,8 @@ function RightContent({ setToken }) {
 					} else navigate('/');
 				})
 				.catch((err) => {
-					console.log('e', err);
+					setLoading(false);
+					alert(err);
 					navigate('/');
 				});
 		}
@@ -75,15 +76,15 @@ function RightContent({ setToken }) {
 					</p>
 
 					<Form.Item label='Email address :'>
-						<Input name='email' />
+						<Input name='email' defaultValue={'project@pesto.com'} />
 					</Form.Item>
 
 					<Form.Item label='Password :'>
-						<Input.Password name='password' />
+						<Input.Password name='password' defaultValue={11111111} />
 					</Form.Item>
 
 					<Form.Item label='Mobile number :'>
-						<Input name='mobile_no' />
+						<Input name='mobile_no' defaultValue={9999999999} />
 					</Form.Item>
 
 					<Form.Item>

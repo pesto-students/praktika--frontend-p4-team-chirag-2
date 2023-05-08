@@ -15,7 +15,7 @@ export default class API {
 			return Promise.resolve(data);
 		} catch (error) {
 			console.error('errResp', error);
-			return Promise.resolve(null);
+			return Promise.reject(error.response.data.message);
 		}
 	}
 
@@ -25,7 +25,7 @@ export default class API {
 			return Promise.resolve(data);
 		} catch (error) {
 			console.error('errResp', error);
-			return Promise.resolve(null);
+			return Promise.reject(error.response.data.message);
 		}
 	}
 
@@ -40,7 +40,7 @@ export default class API {
 			return Promise.resolve(data);
 		} catch (error) {
 			console.error('errResp', error);
-			return Promise.resolve(null);
+			return Promise.resolve(error);
 		}
 	}
 
@@ -55,7 +55,7 @@ export default class API {
 			return Promise.resolve(data);
 		} catch (error) {
 			console.error('errResp', error);
-			return Promise.resolve(null);
+			return Promise.resolve(error);
 		}
 	}
 
@@ -70,7 +70,7 @@ export default class API {
 			return Promise.resolve(data);
 		} catch (error) {
 			console.error('errResp', error);
-			return Promise.resolve(null);
+			return Promise.resolve(error);
 		}
 	}
 
@@ -85,7 +85,7 @@ export default class API {
 			return Promise.resolve(data);
 		} catch (error) {
 			console.error('errResp', error);
-			return Promise.resolve(null);
+			return Promise.resolve(error);
 		}
 	}
 
@@ -101,7 +101,7 @@ export default class API {
 			return Promise.resolve(data);
 		} catch (error) {
 			console.log('errResp', error);
-			return Promise.resolve(null);
+			return Promise.resolve(error);
 		}
 	}
 
@@ -117,7 +117,7 @@ export default class API {
 			return Promise.resolve(data);
 		} catch (error) {
 			console.error('errResp', error);
-			return Promise.resolve(null);
+			return Promise.resolve(error);
 		}
 	}
 
@@ -133,7 +133,7 @@ export default class API {
 			return Promise.resolve(data);
 		} catch (error) {
 			console.error('errResp', error);
-			return Promise.resolve(null);
+			return Promise.resolve(error);
 		}
 	}
 
@@ -149,7 +149,7 @@ export default class API {
 			return Promise.resolve(data);
 		} catch (error) {
 			console.error('errResp', error);
-			return Promise.resolve(null);
+			return Promise.resolve(error);
 		}
 	}
 
@@ -169,7 +169,7 @@ export default class API {
 			return Promise.resolve(data);
 		} catch (error) {
 			console.error('errResp', error);
-			return Promise.resolve(null);
+			return Promise.resolve(error);
 		}
 	}
 
@@ -189,7 +189,7 @@ export default class API {
 			return Promise.resolve(data);
 		} catch (error) {
 			console.error('errResp', error);
-			return Promise.resolve(null);
+			return Promise.resolve(error);
 		}
 	}
 
@@ -205,7 +205,7 @@ export default class API {
 			return Promise.resolve(data);
 		} catch (error) {
 			console.error('errResp', error);
-			return Promise.resolve(null);
+			return Promise.resolve(error);
 		}
 	}
 
@@ -221,7 +221,7 @@ export default class API {
 			return Promise.resolve(data);
 		} catch (error) {
 			console.error('errResp', error);
-			return Promise.resolve(null);
+			return Promise.resolve(error);
 		}
 	}
 

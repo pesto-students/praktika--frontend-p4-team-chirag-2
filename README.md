@@ -1,16 +1,11 @@
-
 # Praktika
 
-- Praktika is a Job Recruitment Platform that can be used by any HR to find suitable candidates while also giving potential candidates the option to view jobs listed by various recruiters. 
+- Praktika is a Job Recruitment Platform that can be used by any HR to find suitable candidates while also giving potential candidates the option to view jobs listed by various recruiters.
 - Praktika provides an end-to-end solution.
 
 <br/>
 
-  
-
 # Table of Contents
-
-  
 
 1. [Demo](#demo)
 
@@ -22,15 +17,9 @@
 
 5. [License](#license)
 
-  
-
 <br/>
 
-  
-
 # Demo
-
-  
 
 [Live FE Demo](https://praktika-frontend.onrender.com/)
 
@@ -44,43 +33,27 @@ Test Credentials for User:
 
 - Password: 11111111
 
- 
 <br/>
 
-  
-
 # Installation
-
-  
 
 - Fork or directly clone this repository to your local machine
 
 - Use the `npm install` command to install dependencies
 
-- Once the dependencies are finished installing, use the `npm run dev` command inside the root directory to open the app in your local browser of choice
-
-  
+- Once the dependencies are finished installing, use the `npm run start` command inside the root directory to open the app in your local browser of choice
 
 <br/>
 
-  
-
 # Technology Stack
-
 
 - [ReactJS](https://reactjs.org/)
 
 - [Axios](https://axios-http.com/docs/intro)
 
-  
-
 <br/>
 
-  
-
 # Authors
-
-  
 
 - [Parth joshi](https://github.com/ParthJedi)
 - [Antony Mathews](https://github.com/ParthJedi)
@@ -88,10 +61,6 @@ Test Credentials for User:
 
 <br/>
 
-  
-
 # License
-
-  
 
 [MIT](https://opensource.org/licenses/MIT)
