@@ -39,7 +39,7 @@ Test Credentials for User:
 
 - Fork or directly clone this repository to your local machine
 
-- Use the `npm install` command to install dependencies
+- Use the `npm install` or `npm install --force` command to install dependencies
 
 - Once the dependencies are finished installing, use the `npm run start` command inside the root directory to open the app in your local browser of choice
 
