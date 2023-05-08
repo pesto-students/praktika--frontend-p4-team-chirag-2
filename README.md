@@ -1,70 +1,97 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Praktika](https://praktika-frontend.onrender.com/)
 
-## Available Scripts
+- Praktika is a Job Recruitment Platform that can be used by any HR to find suitable candidates while also giving potential candidates the option to view jobs listed by various recruiters. 
+- Praktika provides an end-to-end solution.
 
-In the project directory, you can run:
+<br/>
 
-### `npm start`
+  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  
 
-### `npm test`
+1. [Demo](#demo)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. [Installation](#installation)
 
-### `npm run build`
+3. [Technology Stack](#technology-stack)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. [Authors](#authors)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. [License](#license)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  
 
-### `npm run eject`
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Demo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[Live FE Demo](https://praktika-frontend.onrender.com/)
 
-## Learn More
+[Live BE Demo](https://praktika-frontend.onrender.com)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br/>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Test Credentials for User:
 
-### Code Splitting
+- Email: project@pesto.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Password: 11111111
 
-### Analyzing the Bundle Size
+ 
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  
 
-### Making a Progressive Web App
+# Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  
 
-### Advanced Configuration
+- Fork or directly clone this repository to your local machine
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Use the `npm install` command to install dependencies
 
-### Deployment
+- Once the dependencies are finished installing, use the `npm run dev` command inside the root directory to open the app in your local browser of choice
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  
 
-### `npm run build` fails to minify
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
+
+# Technology Stack
+
+
+- [ReactJS](https://reactjs.org/)
+
+- [Axios](https://axios-http.com/docs/intro)
+
+  
+
+<br/>
+
+  
+
+# Authors
+
+  
+
+- [Parth joshi](https://github.com/ParthJedi)
+- [Antony Mathews](https://github.com/ParthJedi)
+- [Mangesh G](https://github.com/ParthJedi)
+
+<br/>
+
+  
+
+# License
+
+  
+
+[MIT](https://opensource.org/licenses/MIT)
