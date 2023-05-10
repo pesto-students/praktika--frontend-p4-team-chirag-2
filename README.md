@@ -1,3 +1,5 @@
+![Logo 89cc2b6075afe02103a02408a3a32b45](https://github.com/pesto-students/praktika--frontend-p4-team-chirag-2/assets/40296824/6f88bce8-5f0f-4052-a944-caf386fc3340)
+
 # Praktika
 
 - Praktika is a Job Recruitment Platform that can be used by any HR to find suitable candidates while also giving potential candidates the option to view jobs listed by various recruiters.
